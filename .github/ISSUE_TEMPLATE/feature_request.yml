@@ -1,0 +1,31 @@
+name: Feature request
+description: Suggest something you'd like PIN-Browser to do.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. Tell us what you'd like, and why it would help.
+  - type: textarea
+    id: what-youd-like
+    attributes:
+      label: What you'd like
+      description: Describe the feature in plain language.
+      placeholder: I'd like PIN-Browser to...
+    validations:
+      required: true
+  - type: textarea
+    id: why-it-would-help
+    attributes:
+      label: Why it would help
+      description: How would this make your day easier?
+    validations:
+      required: true
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else
+      description: Examples, links, or extra context. You can leave this blank.
+    validations:
+      required: false
