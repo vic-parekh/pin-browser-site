@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy - PIN-Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span>PIN</span>-Browser</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quickstart.html">Quick Start</a>
+      <a href="manual.html">User Manual</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html" class="here">Privacy</a>
+      <a href="licenses.html">Licenses</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Privacy</h1>
+<div class="good"><strong>Everything stays on your computer.</strong> PIN-Browser does not upload your screenshots, page text, recordings, downloads, settings or usage to anyone, including us. There's no account, no analytics and no tracking.</div>
+
+<h2>What PIN-Browser stores</h2>
+<table>
+  <tr><th>What</th><th>Where</th></tr>
+  <tr><td>Screenshots of the window (every 5 seconds while the day log is on), with the page address, title, visible text and scroll position for each one; adult-content check results and blacked-out copies</td><td>Your day log folder, one folder per day</td></tr>
+  <tr><td>Page text for Dial back search (<code>text.jsonl</code>) and copies of pages as they looked (<code>html</code>)</td><td>The same day folder</td></tr>
+  <tr><td>Video recordings and downloads (adult ones in a <code>private</code> subfolder)</td><td><code>&lt;day log&gt;/&lt;date&gt;/videos</code> and <code>/downloads</code></td></tr>
+  <tr><td>Usage Report summaries and video thumbnails</td><td>The same day folder</td></tr>
+  <tr><td>Lists of recordings and downloads</td><td><code>recordings.jsonl</code> and <code>downloads.jsonl</code> in the day log folder</td></tr>
+  <tr><td>Settings, plus logins, cookies and cache, like any browser</td><td>Windows: <code>AppData\Roaming\PIN-Browser</code>. Mac: <code>~/Library/Application Support/PIN-Browser</code></td></tr>
+  <tr><td>Debug log (<code>debug.log</code>), which includes page addresses</td><td>The folder you chose at start-up</td></tr>
+</table>
+<p>Nothing is saved before you choose the day log folder. You can turn the day log off at any time with the Day log button, delete a day in Dial back, or delete the files yourself.</p>
+
+<h2>What goes over the network</h2>
+<p>Only two things:</p>
+<ol>
+  <li><strong>The pages you visit</strong>, exactly like any browser. That includes the site's own pictures and videos, its icon, and video files when you press Download.</li>
+  <li><strong>Once a week, a download of a public list of adult sites</strong> (from The Block List Project on GitHub). This is a download only: a plain request for the public list, with no cookies and nothing about you or your browsing sent along. If it fails, the copy that ships with the app is used.</li>
+</ol>
+<p>Nothing is ever uploaded. The adult-content check, the Usage Report, video thumbnails and search all run on your computer.</p>
+
+<h2>Websites you visit</h2>
+<p>Websites still see your visit the way they would in any browser (your IP address, cookies for that site, and so on). PIN-Browser doesn't add anything to that.</p>
+
+</main>
+<footer class="site">
+  <div class="wrap">&copy; 2026 Vic Parekh &middot; PIN-Browser is experimental software. Use it at your own risk. &middot; <a href="https://github.com/vic-parekh/pin-browser-site/issues/new/choose">Report a bug or suggest a feature</a></div>
+</footer>
+</body>
+</html>

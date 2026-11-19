@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quick Start - PIN-Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span>PIN</span>-Browser</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quickstart.html" class="here">Quick Start</a>
+      <a href="manual.html">User Manual</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="licenses.html">Licenses</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Quick Start</h1>
+<p class="lead">Up and running in about five minutes.</p>
+
+<h2>1. Download</h2>
+<p>Go to the <a href="https://github.com/vic-parekh/pin-browser-site/releases">Releases page</a> and open the newest release. Under <strong>Assets</strong>, download:</p>
+<ul>
+  <li><strong>Windows:</strong> <code>PIN-Browser Setup &lt;version&gt;.exe</code></li>
+  <li><strong>Mac:</strong> the <code>.dmg</code> file (arm64 for Apple Silicon Macs, x64 for Intel Macs, when both are offered)</li>
+</ul>
+
+<h2>2. Install on Windows</h2>
+<ol>
+  <li>Double-click the <code>.exe</code> you downloaded.</li>
+  <li>Windows may show a blue box saying <em>"Windows protected your PC"</em> (Microsoft Defender SmartScreen). That's because the beta isn't code-signed yet. Click <strong>More info</strong>, then <strong>Run anyway</strong>.</li>
+  <li>Accept the license, choose where to install (or keep the suggested folder), and finish. You get a desktop shortcut and a Start menu entry called PIN-Browser.</li>
+</ol>
+
+<h2>3. Install on a Mac</h2>
+<ol>
+  <li>Open the <code>.dmg</code> and drag PIN-Browser into your Applications folder.</li>
+  <li>The first time, don't double-click it. Instead <strong>right-click (or Control-click) PIN-Browser in Applications and choose Open</strong>, then click <strong>Open</strong> in the box that appears. This gets past Gatekeeper's "can't be opened because it is from an unidentified developer" warning.</li>
+  <li>On newer versions of macOS, if there's no Open button: try to open it once, then go to <strong>System Settings &gt; Privacy &amp; Security</strong>, scroll down, and click <strong>Open Anyway</strong>.</li>
+  <li>After that, open it the usual way.</li>
+</ol>
+
+<h2>4. First run: choose your day log folder</h2>
+<p>The first time PIN-Browser starts, it asks <em>"Where should PIN-Browser save your day log?"</em> Screenshots, page text, recordings and downloads all go in this folder, one folder per day. <strong>Nothing is saved until you choose.</strong></p>
+<ul>
+  <li><strong>Use suggested folder</strong> uses the folder it shows (on Windows that's <code>C:\Users\&lt;you&gt;\AppData\Roaming\PIN-Browser\daylog</code>).</li>
+  <li><strong>Choose folder...</strong> lets you pick any folder. A drive with plenty of space is a good idea, for example <code>D:\pin_browser_daylog</code> on Windows. The day log grows a little every day.</li>
+  <li>Leave <strong>"Save the debug log in the same folder"</strong> ticked. It's a small text file that helps if you report a bug.</li>
+</ul>
+<p>You can change the folder later in <strong>Options &gt; Recording and Day log</strong>.</p>
+
+<h2>5. Try it</h2>
+<ol>
+  <li>Type an address in the address bar and press Enter. Browse as usual.</li>
+  <li>The <strong>Day log: ON</strong> button shows the day log is saving.</li>
+  <li>After a few minutes, press <kbd>Ctrl+Shift+D</kbd> (<kbd>Cmd+Shift+D</kbd> on a Mac) to open <strong>Dial back</strong> and scrub through what you saw. Click the address under the picture to open that page again.</li>
+  <li>Press <kbd>Ctrl+B</kbd> to see all your tabs, or <kbd>Ctrl+Shift+G</kbd> for the tab grid.</li>
+  <li>Open <strong>Options</strong> with the gear button or <kbd>Ctrl+,</kbd>.</li>
+</ol>
+<p>Next: the <a href="manual.html">User Manual</a> covers every feature.</p>
+
+</main>
+<footer class="site">
+  <div class="wrap">&copy; 2026 Vic Parekh &middot; PIN-Browser is experimental software. Use it at your own risk. &middot; <a href="https://github.com/vic-parekh/pin-browser-site/issues/new/choose">Report a bug or suggest a feature</a></div>
+</footer>
+</body>
+</html>
