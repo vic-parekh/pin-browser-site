@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ - PIN-Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span>PIN</span>-Browser</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quickstart.html">Quick Start</a>
+      <a href="manual.html">User Manual</a>
+      <a href="faq.html" class="here">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="licenses.html">Licenses</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>FAQ</h1>
+
+<h2>Installing</h2>
+<h3>Windows says "Windows protected your PC". Is it safe?</h3>
+<p>That's Microsoft Defender SmartScreen. It shows for apps that aren't code-signed yet, which is the case for this beta. Click <strong>More info</strong>, then <strong>Run anyway</strong>. Only do this for the installer you downloaded from the official <a href="https://github.com/vic-parekh/pin-browser-site/releases">Releases page</a>.</p>
+<h3>My Mac says PIN-Browser "can't be opened" or is from an unidentified developer.</h3>
+<p>That's Gatekeeper. Right-click (or Control-click) PIN-Browser in Applications, choose <strong>Open</strong>, then click <strong>Open</strong>. On newer macOS versions, try opening it once, then go to <strong>System Settings &gt; Privacy &amp; Security</strong> and click <strong>Open Anyway</strong>. You only need to do this the first time.</p>
+<h3>Does it update itself?</h3>
+<p>No. When a new version comes out, download it from the <a href="https://github.com/vic-parekh/pin-browser-site/releases">Releases page</a> and install it over the old one. Your settings and day log stay.</p>
+
+<h2>Your data</h2>
+<h3>Where is my data?</h3>
+<ul>
+  <li><strong>Day log</strong> (screenshots, page text, saved pages, recordings, downloads, usage summaries): the folder you chose on first run, one folder per day. You can see or change it in Options &gt; Recording and Day log, and open it with <strong>Open folder</strong>.</li>
+  <li><strong>Settings, logins and cookies:</strong> on Windows in <code>C:\Users\&lt;you&gt;\AppData\Roaming\PIN-Browser</code> (settings are in <code>settings.json</code> there). On a Mac in <code>~/Library/Application Support/PIN-Browser</code>.</li>
+  <li><strong>Debug log</strong> (<code>debug.log</code>): the folder you chose at start-up, usually the day log folder. See it in Options &gt; Recording and Day log.</li>
+</ul>
+<h3>Is anything uploaded?</h3>
+<p>No. Everything PIN-Browser records stays on your computer. See <a href="privacy.html">Privacy</a> for the details.</p>
+<h3>How much disk space does it use?</h3>
+<p>It depends on how much you browse. Dial back shows the disk use for each day, and <strong>Delete day</strong> removes a day you don't need. Recordings take the most space.</p>
+<h3>How do I delete something?</h3>
+<p>Use <strong>Delete day</strong> in Dial back, or <strong>Options &gt; Privacy and NSFW &gt; Clean Up &gt; Remove NSFW</strong>. You can also delete files in the day log folder yourself.</p>
+
+<h2>Blur and NSFW</h2>
+<h3>How does Blur work?</h3>
+<p>PIN-Browser checks every day log screenshot for adult content on your computer, using a built-in image model, what the site itself labels NSFW, and a public list of adult sites. With <strong>Dial back content</strong> set to <strong>Blur</strong> (Options &gt; General), any page where part of it is NSFW is replaced by a placeholder, in Dial back and in Usage Report thumbnails, and its title and address show as "(hidden: NSFW)". <strong>SFW</strong> (the default) shows a copy with the flagged pictures blacked out and skips NSFW screenshots that have none. <strong>All</strong> shows everything.</p>
+<h3>A normal site is being marked NSFW. What can I do?</h3>
+<p>Add it to <strong>Options &gt; Privacy and NSFW &gt; Never check these sites</strong>, then click <strong>Clean Up &gt; Re-score</strong> to check your saved screenshots again. Screenshots from that site are then no longer NSFW.</p>
+
+<h2>Uninstalling</h2>
+<h3>How do I uninstall PIN-Browser?</h3>
+<ul>
+  <li><strong>Windows:</strong> Settings &gt; Apps &gt; Installed apps, find PIN-Browser, and choose Uninstall.</li>
+  <li><strong>Mac:</strong> quit PIN-Browser and drag it from Applications to the Trash.</li>
+</ul>
+<p>Uninstalling doesn't delete your day log. If you want it gone, delete your day log folder, and the settings folder listed above, yourself.</p>
+
+<h2>Bugs and ideas</h2>
+<h3>How do I report a bug or suggest a feature?</h3>
+<p>Open <a href="https://github.com/vic-parekh/pin-browser-site/issues/new/choose">New issue</a> on GitHub and pick <strong>Bug report</strong> or <strong>Feature request</strong>. For a bug, please include:</p>
+<ul>
+  <li>The version (Help &gt; About shows it) and whether you're on Windows or Mac.</li>
+  <li>What happened, and what you expected.</li>
+  <li>Steps to make it happen again.</li>
+  <li>If you can, the relevant part of <code>debug.log</code> (its folder is in Options &gt; Recording and Day log). Please look it over first: it lists page addresses you visited.</li>
+</ul>
+
+</main>
+<footer class="site">
+  <div class="wrap">&copy; 2026 Vic Parekh &middot; PIN-Browser is experimental software. Use it at your own risk. &middot; <a href="https://github.com/vic-parekh/pin-browser-site/issues/new/choose">Report a bug or suggest a feature</a></div>
+</footer>
+</body>
+</html>

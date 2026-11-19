@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Licenses - PIN-Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span>PIN</span>-Browser</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quickstart.html">Quick Start</a>
+      <a href="manual.html">User Manual</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="licenses.html" class="here">Licenses</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Open-source credits and licenses</h1>
+<p class="lead">PIN-Browser is built on these open-source projects. Thank you to everyone who made them.</p>
+<table>
+  <tr><th>Project</th><th>Used for</th><th>License</th></tr>
+  <tr><td><a href="https://github.com/blocklistproject/Lists">The Block List Project</a>, porn list</td><td>The list of known adult sites used by the NSFW check. A copy ships with the app and is refreshed weekly (download only).</td><td>Public domain (<a href="https://unlicense.org/">Unlicense</a>)</td></tr>
+  <tr><td><a href="https://github.com/infinitered/nsfwjs">NSFWJS</a> by Infinite Red</td><td>The NSFW image check</td><td>MIT License</td></tr>
+  <tr><td><a href="https://github.com/GantMan/nsfw_model">nsfw_model</a> by GantMan</td><td>The MobileNetV2 model the NSFW check runs, on your computer</td><td>MIT License</td></tr>
+  <tr><td><a href="https://github.com/tensorflow/tfjs">TensorFlow.js</a></td><td>Runs the image model on your computer</td><td>Apache License 2.0</td></tr>
+  <tr><td><a href="https://ffmpeg.org/">FFmpeg</a>, via <a href="https://github.com/eugeneware/ffmpeg-static">ffmpeg-static</a></td><td>Video tools: saving recordings, streaming downloads, thumbnails</td><td>GPL</td></tr>
+  <tr><td><a href="https://www.electronjs.org/">Electron</a> and <a href="https://www.chromium.org/">Chromium</a></td><td>The browser engine and app framework</td><td>MIT (Electron); BSD-style and others (Chromium)</td></tr>
+</table>
+<p>Each project's full license text is available from its home page linked above. The Block List Project's license file is included with the app (<code>data/LICENSE-blocklistproject.txt</code>).</p>
+
+</main>
+<footer class="site">
+  <div class="wrap">&copy; 2026 Vic Parekh &middot; PIN-Browser is experimental software. Use it at your own risk. &middot; <a href="https://github.com/vic-parekh/pin-browser-site/issues/new/choose">Report a bug or suggest a feature</a></div>
+</footer>
+</body>
+</html>

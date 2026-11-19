@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Manual - PIN-Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span>PIN</span>-Browser</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quickstart.html">Quick Start</a>
+      <a href="manual.html" class="here">User Manual</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="licenses.html">Licenses</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>User Manual</h1>
+<p class="lead">Everything PIN-Browser does, and how to use it. On a Mac, use <kbd>Cmd</kbd> wherever this page says <kbd>Ctrl</kbd> (except <kbd>Ctrl+Tab</kbd>, which stays Ctrl).</p>
+<p>Jump to: <a href="#browsing">Browsing</a> &middot; <a href="#tabs">Tabs</a> &middot; <a href="#daylog">Day log</a> &middot; <a href="#dialback">Dial back</a> &middot; <a href="#video">Recording and downloads</a> &middot; <a href="#usage">Usage Report</a> &middot; <a href="#nsfw">NSFW protection</a> &middot; <a href="#options">Options</a> &middot; <a href="#shortcuts">Keyboard shortcuts</a></p>
+
+<h2 id="browsing">Browsing</h2>
+<ul>
+  <li>Back, Forward and Reload buttons, an address bar and the usual shortcuts.</li>
+  <li>Links that open a new window open as a new tab instead. Sign-in pop-ups (Google, Apple, Reddit and other logins) open as small connected windows, so signing in works.</li>
+  <li>Google sign-in ("Continue with Google") works.</li>
+</ul>
+
+<h2 id="tabs">Tabs</h2>
+<ul>
+  <li><strong>Up to nine tabs.</strong> None are put to sleep. If you try to open a tenth, you'll see "Only nine tabs allowed!"</li>
+  <li><strong>Only the tab you're viewing makes sound;</strong> the others are muted (they keep playing).</li>
+  <li><strong>Drag tabs</strong> to reorder them. Numbers, <kbd>Ctrl+1</kbd>..<kbd>Ctrl+9</kbd>, Tab status and REC follow the new order.</li>
+  <li><strong>Tab timer:</strong> each tab shows how long it has been on screen, in the shortest form (0:30, 12:05, 1:02:03). It pauses while the tab is in the background, while the page is idle-fuzzed, and while Dial back, the Usage Report, Tab status, the Download report, Options or the tab grid covers the page. A blank tab (no page) doesn't count time. You can turn the timer off in Options &gt; General.</li>
+  <li><strong>Loop:</strong> a tab title that doesn't fit scrolls round and round. Hover over the tab to pause it. On by default; turn it off in Options &gt; General.</li>
+  <li><strong>Site-colored tabs:</strong> each tab gets a soft tint from its site's icon.</li>
+  <li><strong>Tab status</strong> (<kbd>Ctrl+B</kbd>): every open tab with its title, address, when it was opened, how long it's been open, its memory use, and whether it is recording. Click a row to switch to that tab.</li>
+  <li><strong>All tabs grid</strong> (<kbd>Ctrl+Shift+G</kbd>, or View &gt; All Tabs Grid): pictures of all your tabs in a 3x3 grid with number, title, site color and memory use. Click one or press 1-9 to switch; <kbd>Esc</kbd> closes it.</li>
+  <li><strong>Memory use</strong> is measured only while Tab status or the tab grid is open, and updates every few seconds. Tabs from the same site can share one process; they then show the same number, marked "(shared)".</li>
+</ul>
+
+<h2 id="daylog">Day log</h2>
+<ul>
+  <li>Every 5 seconds PIN-Browser saves a screenshot of its window, skipping screens that haven't changed. The <strong>Day log: ON/OFF</strong> button turns it on and off.</li>
+  <li>With each screenshot it saves the page address, title, visible text and scroll position, and a copy of the page (HTML) when it changes.</li>
+  <li>It pauses while the window is minimized, while your computer is locked, after 5 minutes idle (unless a video is playing), and while Options, About, Dial back or the tab grid is open.</li>
+  <li>Everything goes in your day log folder, one folder per day (for example <code>2026-11-18</code>). You choose the folder on first run and can change it in Options.</li>
+</ul>
+
+<h2 id="dialback">Dial back</h2>
+<p>Press <kbd>Ctrl+Shift+D</kbd> or click <strong>Dial back</strong>.</p>
+<ul>
+  <li>Pick a day, then scrub with the slider, use Prev / Next (or the Left / Right arrow keys), or type a time like <code>3:15pm</code> and press Go.</li>
+  <li><strong>Search what was on screen:</strong> type words you remember; click a result to jump there.</li>
+  <li><strong>The address under the picture is a link:</strong> click it to open the page in a new tab. Long addresses are shortened to 110 characters followed by "..."; hover to see the full address.</li>
+  <li><strong>Open this page</strong> reopens it in a new tab; <strong>Saved page</strong> opens the copy of the page saved at that moment.</li>
+  <li>If a video was being recorded at that moment: <strong>Play recording</strong> plays it from that point, <strong>Open file</strong> opens it in your video player, and <strong>Play in VLC</strong> opens it in VLC at that moment (showing the recording's length).</li>
+  <li>Disk use for the day is shown, and <strong>Delete day</strong> removes everything saved for that day.</li>
+  <li>Tabs are locked while Dial back is open (no switching, opening or closing tabs) until you close it.</li>
+</ul>
+
+<h2 id="video">Recording and downloads</h2>
+<ul>
+  <li><strong>Auto-record:</strong> PIN-Browser finds the main video on a page (the big one near the top that is actually playing) and records its area of the screen while it plays. The Auto-record ON/OFF button turns it on and off.</li>
+  <li>Only videos at least 20 seconds long are auto-recorded (change it in Options). YouTube Shorts are always recorded.</li>
+  <li>The toolbar shows REC status: time recorded, % of the video, time left and finish time. Recording is real time, so it saves what plays on screen.</li>
+  <li>Only the visible tab records. Switching away pauses its recording, and switching back resumes it.</li>
+  <li><strong>Recordings panel:</strong> Open file / Show in folder, plus manual Record and Stop. Saved / Partial markers show on the video and in the panel.</li>
+  <li>Pages that use DRM (protected video) show a note; protected video usually records as a black picture.</li>
+  <li>Scrolling video feeds: each clip in view is recorded as its own file, named after the clip.</li>
+  <li><strong>Download button:</strong> saves the original video file (direct, HLS or DASH) when the site allows it. It always targets the main video, not previews or ads.</li>
+  <li><strong>Downloads panel</strong> (next to Recordings): progress with % and time left, results, Open file / Show in folder / Retry.</li>
+  <li><strong>Download report</strong> (<kbd>Ctrl+J</kbd>): every download attempt, success rate per site, and Open / Retry / Dial back.</li>
+  <li>Ordinary link downloads go straight into the day log without a Save As question.</li>
+  <li>Recordings are saved in <code>&lt;day log&gt;/&lt;date&gt;/videos</code> and downloads in <code>&lt;day log&gt;/&lt;date&gt;/downloads</code>.</li>
+</ul>
+
+<h2 id="usage">Usage Report</h2>
+<p>Open it from the View menu.</p>
+<ul>
+  <li>Every day in your day log, with active and idle time, a timeline by site, top sites and pages with Dial back buttons, and highlights.</li>
+  <li><strong>Videos watched:</strong> a thumbnail per video (made on your computer), with clips from the same page grouped into one row with the total time. Each clip still opens in Dial back.</li>
+  <li><strong>Export summary</strong> saves a summary (without screenshots) as a web page or text file.</li>
+</ul>
+
+<h2 id="nsfw">NSFW protection</h2>
+<p>PIN-Browser checks screenshots, recordings and downloads for adult (NSFW) content, entirely on your computer, so it can keep them out of sight.</p>
+<ul>
+  <li>The check uses a built-in image model (the whole page, each picture and video on it, and two tile grids), what the site itself labels NSFW, and a public list of known adult sites.</li>
+  <li><strong>Dial back content</strong> (Options &gt; General) decides what you see in Dial back, the Usage Report and the tab grid:
+    <ul>
+      <li><strong>All:</strong> show everything.</li>
+      <li><strong>Blur:</strong> if any part of a page is NSFW, the whole page is replaced by a placeholder, in Dial back and in Usage Report thumbnails. Titles and addresses show as "(hidden: NSFW)". In the tab grid the picture is blurred.</li>
+      <li><strong>SFW</strong> (the default): shows a copy of the screenshot with the flagged pictures blacked out, and skips NSFW screenshots that have no such copy.</li>
+    </ul>
+  </li>
+  <li>A "Mode: All / Blur / SFW" badge shows the current setting in Dial back, the Usage Report and the tab grid.</li>
+  <li>NSFW recordings and downloaded videos are moved into a <code>private</code> subfolder.</li>
+  <li><strong>Never check these sites</strong> (Options &gt; Privacy and NSFW): about 100 trusted news and reference sites, plus youtube.com and youtu.be, are never checked and always count as not NSFW. You can edit the list or reset it to the defaults.</li>
+  <li><strong>Clean Up &gt; Remove NSFW</strong> deletes NSFW screenshots, recordings and downloads from your day log folder. It asks first, with counts and size.</li>
+  <li><strong>Clean Up &gt; Re-score</strong> checks every saved day log screenshot again, with the current never-check list, and shows progress and how many changed. It can mark more screenshots NSFW, and clears the ones from sites you've since added to the never-check list. Nothing is deleted.</li>
+</ul>
+
+<h2 id="options">Options</h2>
+<p>Open with the gear button or <kbd>Ctrl+,</kbd>. Options has three tabs:</p>
+<ul>
+  <li><strong>General:</strong> tab timer, Loop, Dial back content, VLC location, recordings and downloads folder, and the Download button on videos.</li>
+  <li><strong>Privacy and NSFW:</strong> the never-check list and Clean Up (Remove NSFW, Re-score).</li>
+  <li><strong>Recording and Day log:</strong> Auto-record, minimum video length, file name on video, day log folder and on/off, Idle fuzz, and the debug log folder.</li>
+</ul>
+<p><strong>Idle fuzz:</strong> after 5 minutes (or 1 or 2) without scrolling, typing or clicking, the page slowly blurs and that tab's timer stops until you click. Videos keep playing and recording continues.</p>
+
+<h2 id="shortcuts">Keyboard shortcuts</h2>
+<table>
+  <tr><th>Shortcut (Windows)</th><th>Mac</th><th>What it does</th></tr>
+  <tr><td><kbd>Ctrl+T</kbd></td><td><kbd>Cmd+T</kbd></td><td>New tab</td></tr>
+  <tr><td><kbd>Ctrl+W</kbd></td><td><kbd>Cmd+W</kbd></td><td>Close tab</td></tr>
+  <tr><td><kbd>Ctrl+Tab</kbd> / <kbd>Ctrl+Shift+Tab</kbd></td><td>same</td><td>Next / previous tab</td></tr>
+  <tr><td><kbd>Ctrl+1</kbd> .. <kbd>Ctrl+9</kbd></td><td><kbd>Cmd+1</kbd> .. <kbd>Cmd+9</kbd></td><td>Go to tab 1..9</td></tr>
+  <tr><td><kbd>Ctrl+B</kbd></td><td><kbd>Cmd+B</kbd></td><td>Tab status</td></tr>
+  <tr><td><kbd>Ctrl+Shift+G</kbd></td><td><kbd>Cmd+Shift+G</kbd></td><td>All tabs grid (then 1-9 to switch, Esc to close)</td></tr>
+  <tr><td><kbd>Ctrl+Shift+D</kbd></td><td><kbd>Cmd+Shift+D</kbd></td><td>Dial back</td></tr>
+  <tr><td><kbd>Left</kbd> / <kbd>Right</kbd> arrows</td><td>same</td><td>Previous / next moment in Dial back</td></tr>
+  <tr><td><kbd>Ctrl+J</kbd></td><td><kbd>Cmd+J</kbd></td><td>Download report</td></tr>
+  <tr><td><kbd>Ctrl+L</kbd>, <kbd>Alt+D</kbd>, <kbd>F6</kbd></td><td><kbd>Cmd+L</kbd>, <kbd>F6</kbd></td><td>Go to the address bar</td></tr>
+  <tr><td><kbd>Alt+Left</kbd> / <kbd>Alt+Right</kbd></td><td><kbd>Option+Left</kbd> / <kbd>Option+Right</kbd></td><td>Back / Forward</td></tr>
+  <tr><td><kbd>F5</kbd>, <kbd>Ctrl+R</kbd></td><td><kbd>Cmd+R</kbd></td><td>Reload</td></tr>
+  <tr><td><kbd>Esc</kbd></td><td>same</td><td>Stop loading; close Dial back, Tab status, the reports, the grid or About</td></tr>
+  <tr><td><kbd>Ctrl+,</kbd></td><td><kbd>Cmd+,</kbd></td><td>Options</td></tr>
+</table>
+
+</main>
+<footer class="site">
+  <div class="wrap">&copy; 2026 Vic Parekh &middot; PIN-Browser is experimental software. Use it at your own risk. &middot; <a href="https://github.com/vic-parekh/pin-browser-site/issues/new/choose">Report a bug or suggest a feature</a></div>
+</footer>
+</body>
+</html>
