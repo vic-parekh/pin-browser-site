@@ -1,0 +1,70 @@
+name: Bug report
+description: Something in PIN-Browser went wrong.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. A few clear details help us fix it faster.
+
+        Please don't include private browsing data or personal info. Leave out passwords, browsing history, account details, and anything from a private session.
+  - type: input
+    id: version
+    attributes:
+      label: PIN-Browser version
+      description: The version shown in the app. For example, 1.5.5.
+      placeholder: "1.5.5"
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      description: Which computer are you using?
+      options:
+        - Windows
+        - Mac
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Tell us what went wrong, and what you were doing when it happened.
+      placeholder: The day log stopped updating after I opened a new tab.
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Walk us through it, one step per line.
+      placeholder: |
+        1. Open PIN-Browser
+        2. Go to...
+        3. See...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What did you think would happen instead? You can leave this blank.
+    validations:
+      required: false
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Screenshots or video
+      description: A screenshot or short video helps us see the problem. You can leave this blank. Please don't include private browsing data or personal info.
+    validations:
+      required: false
+      accept: ".png,.jpg,.jpeg,.gif,.webp,.svg,.mp4,.mov,.webm"
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else
+      description: Anything else we should know. You can leave this blank.
+    validations:
+      required: false
