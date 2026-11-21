@@ -33,3 +33,12 @@ ol li, ul li { margin: 4px 0; }
 footer.site { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
 footer.site .wrap { padding: 16px 20px 28px; }
 @media (max-width: 600px) { html { font-size: 16px; } h1 { font-size: 1.6rem; } }
+/* Manifesto page */
+.manifesto > p, .manifesto > ul li { font-size: 1.04rem; }
+.manifesto sup { line-height: 0; font-size: .7em; }
+.manifesto sup a { text-decoration: none; }
+.manifesto .signature { margin-top: 28px; font-style: italic; font-weight: 600; }
+.manifesto .refs-note { color: var(--muted); }
+.manifesto ol.refs { font-size: .86rem; color: var(--muted); padding-left: 2.6em; }
+.manifesto ol.refs li { margin: 6px 0; overflow-wrap: anywhere; }
+.manifesto ol.refs li:target { background: #fff8e1; }
