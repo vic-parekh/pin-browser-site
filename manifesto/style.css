@@ -1,0 +1,44 @@
+/* PIN-Browser docs site: one shared stylesheet */
+:root { --ink: #1f2328; --muted: #5b6470; --accent: #1565c0; --line: #e3e6ea; --bg: #ffffff; --soft: #f5f7fa; }
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body { margin: 0; color: var(--ink); background: var(--bg); font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; }
+header.site { border-bottom: 1px solid var(--line); background: var(--soft); }
+header.site .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding: 12px 20px; }
+header.site .brand { font-weight: 700; font-size: 1.1rem; color: var(--ink); text-decoration: none; margin-right: auto; }
+header.site .brand span { color: var(--accent); }
+nav a { color: var(--muted); text-decoration: none; padding: 4px 2px; border-bottom: 2px solid transparent; }
+nav a:hover { color: var(--ink); }
+nav a.here { color: var(--ink); border-bottom-color: var(--accent); }
+.wrap { max-width: 860px; margin: 0 auto; }
+main.wrap { padding: 28px 20px 48px; }
+h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 12px; }
+h2 { font-size: 1.35rem; margin: 36px 0 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+h3 { font-size: 1.08rem; margin: 24px 0 6px; }
+p.lead { font-size: 1.12rem; color: var(--muted); }
+a { color: var(--accent); }
+code, kbd { font-family: ui-monospace, Consolas, Menlo, monospace; font-size: .9em; background: var(--soft); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; }
+kbd { white-space: nowrap; }
+table { border-collapse: collapse; width: 100%; margin: 10px 0 18px; font-size: .95rem; }
+th, td { border-bottom: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--soft); }
+.note { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+.good { background: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin: 18px 0; }
+.card { border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; background: var(--bg); }
+.card h3 { margin-top: 0; }
+.button { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 10px 18px; border-radius: 8px; font-weight: 600; }
+.button:hover { background: #0d47a1; }
+ol li, ul li { margin: 4px 0; }
+footer.site { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+footer.site .wrap { padding: 16px 20px 28px; }
+@media (max-width: 600px) { html { font-size: 16px; } h1 { font-size: 1.6rem; } }
+/* Manifesto page */
+.manifesto > p, .manifesto > ul li { font-size: 1.04rem; }
+.manifesto sup { line-height: 0; font-size: .7em; }
+.manifesto sup a { text-decoration: none; }
+.manifesto .signature { margin-top: 28px; font-style: italic; font-weight: 600; }
+.manifesto .refs-note { color: var(--muted); }
+.manifesto ol.refs { font-size: .86rem; color: var(--muted); padding-left: 2.6em; }
+.manifesto ol.refs li { margin: 6px 0; overflow-wrap: anywhere; }
+.manifesto ol.refs li:target { background: #fff8e1; }
